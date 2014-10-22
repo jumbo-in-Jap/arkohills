@@ -15,6 +15,7 @@
 		367AB41C19E4F80200882553 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367AB41A19E4F80200882553 /* LaunchScreen.xib */; };
 		367AB43219E5045000882553 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AB43119E5045000882553 /* NetworkManager.swift */; };
 		367AB43419E5048100882553 /* TaskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AB43319E5048100882553 /* TaskAPI.swift */; };
+		367C07DC19F628F1000F31E9 /* restaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 367C07DB19F628F1000F31E9 /* restaurantCell.xib */; };
 		9B25D1ED32B94FD1B80AED13 /* libPods-arkohills.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 404CCD524AC44F01922A683A /* libPods-arkohills.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		367AB43319E5048100882553 /* TaskAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskAPI.swift; sourceTree = "<group>"; };
 		367AB43519E5053D00882553 /* arkohills-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "arkohills-Bridging-Header.h"; sourceTree = "<group>"; };
 		367AB43619E5053D00882553 /* SwiftExample-Briding-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftExample-Briding-Header.h"; sourceTree = "<group>"; };
+		367C07DB19F628F1000F31E9 /* restaurantCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = restaurantCell.xib; sourceTree = "<group>"; };
 		404CCD524AC44F01922A683A /* libPods-arkohills.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-arkohills.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		721F787FBBE443FE9F201F78 /* Pods-arkohills.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arkohills.xcconfig"; path = "Pods/Pods-arkohills.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				367AB43619E5053D00882553 /* SwiftExample-Briding-Header.h */,
 				367AB41319E4F80200882553 /* SecondViewController.swift */,
 				367AB41519E4F80200882553 /* Main.storyboard */,
+				367C07DB19F628F1000F31E9 /* restaurantCell.xib */,
 				367AB41819E4F80200882553 /* Images.xcassets */,
 				367AB41A19E4F80200882553 /* LaunchScreen.xib */,
 				367AB40D19E4F80200882553 /* Supporting Files */,
@@ -200,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367C07DC19F628F1000F31E9 /* restaurantCell.xib in Resources */,
 				367AB41719E4F80200882553 /* Main.storyboard in Resources */,
 				367AB41C19E4F80200882553 /* LaunchScreen.xib in Resources */,
 				367AB41919E4F80200882553 /* Images.xcassets in Resources */,

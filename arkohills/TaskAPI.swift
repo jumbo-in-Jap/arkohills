@@ -22,7 +22,10 @@ class TASKAPI: NSObject {
                 success:
                 {(operaton:AFHTTPRequestOperation!, response:AnyObject!)->Void in
                     //                    var res:NSDictionary = response as NSArray
-                    success(response as NSArray)
+                    if let restaurants:AnyObject! = response["rest"]
+                    {
+                        success(restaurants as NSArray)
+                    }
                 },
                 failure:
                 {(operation:AFHTTPRequestOperation!, err:NSError!)->Void in
