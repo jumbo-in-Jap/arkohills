@@ -4,4 +4,5 @@
 target "arkohills" do
 	platform :ios, "8.0"
 	pod 'AFNetworking'
+    pod 'SDWebImage', '~>3.6'
 end

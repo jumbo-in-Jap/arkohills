@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		362B3B441A09C11E005711E8 /* チェック-on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362B3B421A09C11E005711E8 /* チェック-on@3x.png */; };
 		362B3B451A09C11E005711E8 /* チェック@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362B3B431A09C11E005711E8 /* チェック@3x.png */; };
+		362B3B471A09DCF9005711E8 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362B3B461A09DCF9005711E8 /* RestaurantTableViewCell.swift */; };
+		362B3B4A1A09E38F005711E8 /* util.m in Sources */ = {isa = PBXBuildFile; fileRef = 362B3B491A09E38F005711E8 /* util.m */; };
+		362B3B4C1A09E606005711E8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362B3B4B1A09E606005711E8 /* CoreLocation.framework */; };
 		367AB41019E4F80200882553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AB40F19E4F80200882553 /* AppDelegate.swift */; };
 		367AB41219E4F80200882553 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AB41119E4F80200882553 /* FirstViewController.swift */; };
 		367AB41419E4F80200882553 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AB41319E4F80200882553 /* SecondViewController.swift */; };
@@ -34,6 +37,10 @@
 /* Begin PBXFileReference section */
 		362B3B421A09C11E005711E8 /* チェック-on@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "チェック-on@3x.png"; sourceTree = "<group>"; };
 		362B3B431A09C11E005711E8 /* チェック@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "チェック@3x.png"; sourceTree = "<group>"; };
+		362B3B461A09DCF9005711E8 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		362B3B481A09E38F005711E8 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		362B3B491A09E38F005711E8 /* util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = util.m; sourceTree = "<group>"; };
+		362B3B4B1A09E606005711E8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		367AB40A19E4F80200882553 /* arkohills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arkohills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		367AB40E19E4F80200882553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		367AB40F19E4F80200882553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362B3B4C1A09E606005711E8 /* CoreLocation.framework in Frameworks */,
 				9B25D1ED32B94FD1B80AED13 /* libPods-arkohills.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +82,7 @@
 		2677884C01824162822FD011 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				362B3B4B1A09E606005711E8 /* CoreLocation.framework */,
 				404CCD524AC44F01922A683A /* libPods-arkohills.a */,
 			);
 			name = Frameworks;
@@ -123,6 +132,7 @@
 				362B3B411A09C11E005711E8 /* Resources */,
 				367AB40D19E4F80200882553 /* Supporting Files */,
 				367AB43519E5053D00882553 /* arkohills-Bridging-Header.h */,
+				362B3B461A09DCF9005711E8 /* RestaurantTableViewCell.swift */,
 			);
 			path = arkohills;
 			sourceTree = "<group>";
@@ -131,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				367AB40E19E4F80200882553 /* Info.plist */,
+				362B3B481A09E38F005711E8 /* util.h */,
+				362B3B491A09E38F005711E8 /* util.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -274,9 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				367AB43219E5045000882553 /* NetworkManager.swift in Sources */,
+				362B3B4A1A09E38F005711E8 /* util.m in Sources */,
 				367AB41419E4F80200882553 /* SecondViewController.swift in Sources */,
 				367AB41019E4F80200882553 /* AppDelegate.swift in Sources */,
 				367AB41219E4F80200882553 /* FirstViewController.swift in Sources */,
+				362B3B471A09DCF9005711E8 /* RestaurantTableViewCell.swift in Sources */,
 				367AB43419E5048100882553 /* TaskAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

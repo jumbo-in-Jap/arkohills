@@ -34,9 +34,10 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.restaurantsTableView.delegate = self
         self.restaurantsTableView.dataSource = self
         
+        var nib:UINib = UINib(nibName: "restaurantCell", bundle: nil)
+        self.restaurantsTableView.registerNib(nib, forCellReuseIdentifier: "Cell")
     }
     
-    // セルに表示するテキスト
     
     // セルの行数
     func tableView(retaurantsTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,15 +46,30 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     // セルの内容を変更
     func tableView(retaurantsTableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
         
-        cell.textLabel?.text = self.restautrants[indexPath.row]["name"] as? String
+        // 再利用でセル宣言
+        let cell:RestaurantTableViewCell = self.restaurantsTableView.dequeueReusableCellWithIdentifier("Cell") as RestaurantTableViewCell
+        
+        // アクセサリータイプ
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
+        // レストランの名前
+        cell.nameRetaurant.text = self.restautrants[indexPath.row]["name"] as? String
+        
+        // レストランのサムネイル
+        
+        // setDistで距離呼び出す↓ 11/5 宿題
+        cell.setDist(130.444, lngRestaurant: 134.09)
+        
+        
+        // 最後にセルを返す！
         return cell
+        
     }
     
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        <#code#>
-//    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 120
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

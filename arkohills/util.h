@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface util : NSObject
-
++(double)getDist:(double)latA :(double)lngA :(double)latB :(double)lngB;
 @end
