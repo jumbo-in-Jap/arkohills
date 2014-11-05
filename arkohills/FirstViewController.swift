@@ -64,7 +64,7 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
             cell.nameRetaurant.attributedText = attributedText
         
         // レストランのサムネイル
-        cell.thumbnailRestaurant.setImageWithURL(NSURL(string: "http://path/to/image.webp"))
+        cell.thumbnailRestaurant.sd_setImageWithURL(NSURL(string: "http://path/to/image.webp"))
         
         // setDistで距離呼び出す
         cell.setDist(130.444, lngRestaurant: 134.09)
