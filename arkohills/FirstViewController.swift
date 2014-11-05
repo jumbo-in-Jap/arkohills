@@ -56,11 +56,18 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         // レストランの名前
         cell.nameRetaurant.text = self.restautrants[indexPath.row]["name"] as? String
         
+            // レストランの名前の行間を変更
+            let attributedText = NSMutableAttributedString(string: cell.nameRetaurant.text!)
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = 5
+            attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+            cell.nameRetaurant.attributedText = attributedText
+        
         // レストランのサムネイル
+        cell.thumbnailRestaurant.setImageWithURL(NSURL(string: "http://path/to/image.webp"))
         
-        // setDistで距離呼び出す↓ 11/5 宿題
+        // setDistで距離呼び出す
         cell.setDist(130.444, lngRestaurant: 134.09)
-        
         
         // 最後にセルを返す！
         return cell
