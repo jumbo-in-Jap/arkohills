@@ -2,58 +2,105 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="z0z-hs-7Zm">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="z0z-hs-7Zm" customClass="RestaurantTableViewCell" customModule="arkohills" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z0z-hs-7Zm" id="NVX-nw-2WU">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アークから：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdF-d1-CR1">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アークから：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdF-d1-CR1">
                         <rect key="frame" x="173" y="85" width="110" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls7-Cy-Hjy">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ls7-Cy-Hjy">
                         <rect key="frame" x="230" y="84" width="110" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="レストラン名レストラン名レストラン名レストラン名レストラン名" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDf-d6-jQY">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レストラン名レストラン名レストラン名レストラン名レストラン名" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDf-d6-jQY">
                         <rect key="frame" x="117" y="8" width="183" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="3T8-ni-Rdy"/>
+                            <constraint firstAttribute="width" constant="183" id="fRy-mF-eW3"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.72549021244049072" green="0.47843140363693237" blue="0.25490197539329529" alpha="1" colorSpace="deviceRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CsO-b1-gPh">
-                        <rect key="frame" x="7" y="9" width="102" height="102"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平均予算　：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBy-js-JMv">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平均予算　：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBy-js-JMv">
                         <rect key="frame" x="173" y="68" width="110" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="チェック@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-BG-YNZ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="チェック@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-BG-YNZ">
                         <rect key="frame" x="118" y="63" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="4QW-uB-VyK"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2000円" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjb-ov-e8z">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000円" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjb-ov-e8z">
                         <rect key="frame" x="230" y="65" width="128" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="チェック-on@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="WWG-pz-bVY">
+                        <rect key="frame" x="7" y="10" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Wwj-F4-AbW"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="ls7-Cy-Hjy" secondAttribute="bottom" constant="6.5" id="4zL-mq-rmt"/>
+                    <constraint firstItem="WWG-pz-bVY" firstAttribute="leading" secondItem="NVX-nw-2WU" secondAttribute="leadingMargin" constant="-1" id="Ac2-M3-GEv"/>
+                    <constraint firstItem="2JL-BG-YNZ" firstAttribute="leading" secondItem="WWG-pz-bVY" secondAttribute="trailing" constant="11" id="CWe-GM-hbh"/>
+                    <constraint firstItem="2JL-BG-YNZ" firstAttribute="top" secondItem="oDf-d6-jQY" secondAttribute="bottom" constant="5" id="JR2-I3-JtV"/>
+                    <constraint firstItem="zBy-js-JMv" firstAttribute="leading" secondItem="2JL-BG-YNZ" secondAttribute="trailing" constant="10" id="JXG-cg-biG"/>
+                    <constraint firstItem="ls7-Cy-Hjy" firstAttribute="top" secondItem="oDf-d6-jQY" secondAttribute="bottom" constant="26" id="KAK-mm-SSX"/>
+                    <constraint firstItem="zBy-js-JMv" firstAttribute="bottom" secondItem="vjb-ov-e8z" secondAttribute="bottom" id="KAl-nu-h2E"/>
+                    <constraint firstItem="zBy-js-JMv" firstAttribute="leading" secondItem="WdF-d1-CR1" secondAttribute="leading" id="M9W-3X-IC3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oDf-d6-jQY" secondAttribute="trailing" constant="12" id="MvP-IP-ooD"/>
+                    <constraint firstItem="vjb-ov-e8z" firstAttribute="leading" secondItem="2JL-BG-YNZ" secondAttribute="trailing" constant="67" id="PIq-Uh-uh8"/>
+                    <constraint firstItem="oDf-d6-jQY" firstAttribute="top" secondItem="NVX-nw-2WU" secondAttribute="topMargin" id="Wck-1M-2hv"/>
+                    <constraint firstItem="WWG-pz-bVY" firstAttribute="top" secondItem="NVX-nw-2WU" secondAttribute="topMargin" constant="2" id="aA5-Ki-Y9e"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WWG-pz-bVY" secondAttribute="bottom" constant="2" id="aDh-An-7Yw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2JL-BG-YNZ" secondAttribute="bottom" constant="3.5" id="dIy-lk-mtp"/>
+                    <constraint firstItem="zBy-js-JMv" firstAttribute="top" secondItem="oDf-d6-jQY" secondAttribute="bottom" constant="10" id="kcz-TL-9Ba"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ls7-Cy-Hjy" secondAttribute="trailing" constant="-28" id="m7g-Y6-FQ5"/>
+                    <constraint firstItem="zBy-js-JMv" firstAttribute="firstBaseline" secondItem="vjb-ov-e8z" secondAttribute="firstBaseline" id="oUK-Tk-iJS"/>
+                    <constraint firstItem="zBy-js-JMv" firstAttribute="trailing" secondItem="WdF-d1-CR1" secondAttribute="trailing" id="qW1-Pb-Lwf"/>
+                    <constraint firstItem="WdF-d1-CR1" firstAttribute="top" secondItem="oDf-d6-jQY" secondAttribute="bottom" constant="27" id="qtO-zu-Ug5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WdF-d1-CR1" secondAttribute="bottom" constant="5.5" id="r5d-d4-zdT"/>
+                    <constraint firstItem="oDf-d6-jQY" firstAttribute="leading" secondItem="WWG-pz-bVY" secondAttribute="trailing" constant="10" id="sSH-dN-SUe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zBy-js-JMv" secondAttribute="bottom" constant="22.5" id="t5Y-06-5oQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zBy-js-JMv" secondAttribute="trailing" constant="29" id="t9l-Xr-YJN"/>
+                    <constraint firstItem="vjb-ov-e8z" firstAttribute="leading" secondItem="ls7-Cy-Hjy" secondAttribute="leading" id="xjU-lK-rSo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vjb-ov-e8z" secondAttribute="trailing" constant="-46" id="yQt-FQ-6Oq"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="414" y="174.5"/>
+            <connections>
+                <outlet property="checkMark" destination="2JL-BG-YNZ" id="UOj-gZ-hLi"/>
+                <outlet property="distanceRestaurant" destination="ls7-Cy-Hjy" id="BnL-CZ-deH"/>
+                <outlet property="nameRetaurant" destination="oDf-d6-jQY" id="NoP-25-ndl"/>
+                <outlet property="priceRestaurant" destination="vjb-ov-e8z" id="Lar-Oj-7IZ"/>
+                <outlet property="thumbnailRestaurant" destination="WWG-pz-bVY" id="toT-bG-7uh"/>
+            </connections>
+            <point key="canvasLocation" x="414" y="174"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="チェック-on@3x.png" width="133" height="133"/>
         <image name="チェック@3x.png" width="133" height="133"/>
     </resources>
 </document>
