@@ -26,16 +26,6 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レストラン名レストラン名レストラン名レストラン名レストラン名" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDf-d6-jQY">
-                        <rect key="frame" x="117" y="8" width="183" height="50"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="50" id="3T8-ni-Rdy"/>
-                            <constraint firstAttribute="width" constant="183" id="fRy-mF-eW3"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.72549021244049072" green="0.47843140363693237" blue="0.25490197539329529" alpha="1" colorSpace="deviceRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平均予算　：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBy-js-JMv">
                         <rect key="frame" x="173" y="68" width="110" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
@@ -60,6 +50,15 @@
                             <constraint firstAttribute="width" constant="100" id="Wwj-F4-AbW"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レストラン名レストラン名レストラン名レストラン名レストラン名" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDf-d6-jQY">
+                        <rect key="frame" x="117" y="8" width="195" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="3T8-ni-Rdy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.72549021244049072" green="0.47843140363693237" blue="0.25490197539329529" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="ls7-Cy-Hjy" secondAttribute="bottom" constant="6.5" id="4zL-mq-rmt"/>
@@ -70,7 +69,7 @@
                     <constraint firstItem="ls7-Cy-Hjy" firstAttribute="top" secondItem="oDf-d6-jQY" secondAttribute="bottom" constant="26" id="KAK-mm-SSX"/>
                     <constraint firstItem="zBy-js-JMv" firstAttribute="bottom" secondItem="vjb-ov-e8z" secondAttribute="bottom" id="KAl-nu-h2E"/>
                     <constraint firstItem="zBy-js-JMv" firstAttribute="leading" secondItem="WdF-d1-CR1" secondAttribute="leading" id="M9W-3X-IC3"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="oDf-d6-jQY" secondAttribute="trailing" constant="12" id="MvP-IP-ooD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oDf-d6-jQY" secondAttribute="trailing" id="MvP-IP-ooD"/>
                     <constraint firstItem="vjb-ov-e8z" firstAttribute="leading" secondItem="2JL-BG-YNZ" secondAttribute="trailing" constant="67" id="PIq-Uh-uh8"/>
                     <constraint firstItem="oDf-d6-jQY" firstAttribute="top" secondItem="NVX-nw-2WU" secondAttribute="topMargin" id="Wck-1M-2hv"/>
                     <constraint firstItem="WWG-pz-bVY" firstAttribute="top" secondItem="NVX-nw-2WU" secondAttribute="topMargin" constant="2" id="aA5-Ki-Y9e"/>
