@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362B3B441A09C11E005711E8 /* チェック-on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362B3B421A09C11E005711E8 /* チェック-on@3x.png */; };
+		362B3B451A09C11E005711E8 /* チェック@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 362B3B431A09C11E005711E8 /* チェック@3x.png */; };
 		367AB41019E4F80200882553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AB40F19E4F80200882553 /* AppDelegate.swift */; };
 		367AB41219E4F80200882553 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AB41119E4F80200882553 /* FirstViewController.swift */; };
 		367AB41419E4F80200882553 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367AB41319E4F80200882553 /* SecondViewController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		362B3B421A09C11E005711E8 /* チェック-on@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "チェック-on@3x.png"; sourceTree = "<group>"; };
+		362B3B431A09C11E005711E8 /* チェック@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "チェック@3x.png"; sourceTree = "<group>"; };
 		367AB40A19E4F80200882553 /* arkohills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arkohills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		367AB40E19E4F80200882553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		367AB40F19E4F80200882553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		362B3B411A09C11E005711E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				362B3B421A09C11E005711E8 /* チェック-on@3x.png */,
+				362B3B431A09C11E005711E8 /* チェック@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		367AB40119E4F80000882553 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +120,7 @@
 				367C07DB19F628F1000F31E9 /* restaurantCell.xib */,
 				367AB41819E4F80200882553 /* Images.xcassets */,
 				367AB41A19E4F80200882553 /* LaunchScreen.xib */,
+				362B3B411A09C11E005711E8 /* Resources */,
 				367AB40D19E4F80200882553 /* Supporting Files */,
 				367AB43519E5053D00882553 /* arkohills-Bridging-Header.h */,
 			);
@@ -203,10 +217,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362B3B441A09C11E005711E8 /* チェック-on@3x.png in Resources */,
 				367C07DC19F628F1000F31E9 /* restaurantCell.xib in Resources */,
 				367AB41719E4F80200882553 /* Main.storyboard in Resources */,
 				367AB41C19E4F80200882553 /* LaunchScreen.xib in Resources */,
 				367AB41919E4F80200882553 /* Images.xcassets in Resources */,
+				362B3B451A09C11E005711E8 /* チェック@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

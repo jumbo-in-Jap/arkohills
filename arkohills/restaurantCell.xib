@@ -39,7 +39,7 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-BG-YNZ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="チェック@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="2JL-BG-YNZ">
                         <rect key="frame" x="118" y="63" width="45" height="45"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2000円" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjb-ov-e8z">
@@ -53,4 +53,7 @@
             <point key="canvasLocation" x="414" y="174.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="チェック@3x.png" width="133" height="133"/>
+    </resources>
 </document>
