@@ -11,11 +11,9 @@ import UIKit
 class RestaurantTableViewCell: UITableViewCell {
 
     @IBOutlet weak var thumbnailRestaurant: UIImageView!
-    @IBOutlet weak var nameRetaurant: UILabel!
+    @IBOutlet weak var nameRestaurant: UILabel!
     @IBOutlet weak var checkMark: UIImageView!
-    
     @IBOutlet weak var priceRestaurant: UILabel!
-    
     @IBOutlet weak var distanceRestaurant: UILabel!
 
     override func awakeFromNib() {
@@ -34,7 +32,12 @@ class RestaurantTableViewCell: UITableViewCell {
     {
         // アークヒルズの緯度経度 と レストランの緯度経度をgetDistに渡す
         let dist = util.getDist(35.6658715, 139.7394235, latRestaurant, lngRestaurant)
-        self.distanceRestaurant.text = NSString(format: "%.2f", dist)
+        
+        // 距離を分速80mで割る
+        let timeRequired = NSString(format: "%.10f", dist / 80)
+        
+        // 徒歩所要時間
+        self.distanceRestaurant.text = timeRequired + "分"
     }
 
 }

@@ -12,7 +12,6 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     @IBOutlet weak var restaurantsTableView: UITableView!
     
-//    var restautrants:[AnyObject]!
     var restautrants = [AnyObject]()
     
     override func viewDidLoad() {
@@ -40,12 +39,12 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     
     // セルの行数
-    func tableView(retaurantsTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(restaurantsTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.restautrants.count
     }
     
     // セルの内容を変更
-    func tableView(retaurantsTableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(restaurantsTableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // 再利用でセル宣言
         let cell:RestaurantTableViewCell = self.restaurantsTableView.dequeueReusableCellWithIdentifier("Cell") as RestaurantTableViewCell
@@ -53,21 +52,37 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         // アクセサリータイプ
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         
+        // gnaviというイベントの定義で書くこともできる↓
+            // let gnavi: Dictionary<String,AnyObject> =  as Dictionary<String, AnyObject>
+            // let name:AnyObject = gnavi["name"]!
+        
         // レストランの名前
-        cell.nameRetaurant.text = self.restautrants[indexPath.row]["name"] as? String
+        cell.nameRestaurant.text = self.restautrants[indexPath.row]["name"] as? String
         
             // レストランの名前の行間を変更
-            let attributedText = NSMutableAttributedString(string: cell.nameRetaurant.text!)
+            let attributedText = NSMutableAttributedString(string: cell.nameRestaurant.text!)
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 5
             attributedText.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
-            cell.nameRetaurant.attributedText = attributedText
+            cell.nameRestaurant.attributedText = attributedText
+            // はみ出した部分を「...」で表示
+            cell.nameRestaurant.lineBreakMode = NSLineBreakMode.ByTruncatingTail
         
+        
+        // レストランの平均予算
+        let price = self.restautrants[indexPath.row]["budget"] as? String
+        cell.priceRestaurant.text = price! + "円"
+
         // レストランのサムネイル
-        cell.thumbnailRestaurant.sd_setImageWithURL(NSURL(string: "http://path/to/image.webp"))
+        //let thumbnail:AnyObject = self.restautrants[indexPath.row]["image_url"]["shop_image1"]
+        cell.thumbnailRestaurant.sd_setImageWithURL(NSURL(string: "http://d3lncrho1w0yzl.cloudfront.net/photo1.100x133.jpg"))
+        
+        // ↓落ちる！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+        // let lat = Double(self.restautrants[indexPath.row]["latitude"] as Double)
+        // let lnt = self.restautrants[indexPath.row]["longitude"] as Double!
         
         // setDistで距離呼び出す
-        cell.setDist(130.444, lngRestaurant: 134.09)
+        cell.setDist(130, lngRestaurant: 130)
         
         // 最後にセルを返す！
         return cell

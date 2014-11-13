@@ -91,7 +91,7 @@
             <connections>
                 <outlet property="checkMark" destination="2JL-BG-YNZ" id="UOj-gZ-hLi"/>
                 <outlet property="distanceRestaurant" destination="ls7-Cy-Hjy" id="BnL-CZ-deH"/>
-                <outlet property="nameRetaurant" destination="oDf-d6-jQY" id="NoP-25-ndl"/>
+                <outlet property="nameRestaurant" destination="oDf-d6-jQY" id="Lc4-4w-rmw"/>
                 <outlet property="priceRestaurant" destination="vjb-ov-e8z" id="Lar-Oj-7IZ"/>
                 <outlet property="thumbnailRestaurant" destination="WWG-pz-bVY" id="toT-bG-7uh"/>
             </connections>
