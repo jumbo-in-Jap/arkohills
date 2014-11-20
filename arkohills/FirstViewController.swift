@@ -78,12 +78,14 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.thumbnailRestaurant.sd_setImageWithURL(NSURL(string: "http://d3lncrho1w0yzl.cloudfront.net/photo1.100x133.jpg"))
         
         // ↓落ちる！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-        // let lat = Double(self.restautrants[indexPath.row]["latitude"] as Double)
-        // let lnt = self.restautrants[indexPath.row]["longitude"] as Double!
+        var lat:Double = self.restautrants[indexPath.row]["latitude"] as Double
+        println(lat)
+        var lng:Double? = self.restautrants[indexPath.row]["longitude"] as? Double
+         //let lng = self.restautrants[indexPath.row]["longitude"] as NSNumber
         
         // setDistで距離呼び出す
-        cell.setDist(130, lngRestaurant: 130)
-        
+        //cell.setDist(lat! , lngRestaurant: lng!)
+    
         // 最後にセルを返す！
         return cell
         
