@@ -77,14 +77,15 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         //let thumbnail:AnyObject = self.restautrants[indexPath.row]["image_url"]["shop_image1"]
         cell.thumbnailRestaurant.sd_setImageWithURL(NSURL(string: "http://d3lncrho1w0yzl.cloudfront.net/photo1.100x133.jpg"))
         
-        // ↓落ちる！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
-        var lat:Double = self.restautrants[indexPath.row]["latitude"] as Double
-        println(lat)
-        var lng:Double? = self.restautrants[indexPath.row]["longitude"] as? Double
-         //let lng = self.restautrants[indexPath.row]["longitude"] as NSNumber
+        // 暫定的解決策
+        // swiftのOptional型の罠で、型の変換がややこしいのが原因
+        var tlat = self.restautrants[indexPath.row]["latitude"]
+        var lat:Double = (("\(tlat!!)") as NSString).doubleValue
+        var tlng = self.restautrants[indexPath.row]["longitude"]
+        var lng:Double = (("\(tlng!!)") as NSString).doubleValue
         
         // setDistで距離呼び出す
-        //cell.setDist(lat! , lngRestaurant: lng!)
+        cell.setDist(lat , lngRestaurant: lng)
     
         // 最後にセルを返す！
         return cell
